@@ -18,6 +18,14 @@
 * **Data Visualization:**
     - Track and visualize study progress through graphs and charts (future implementation).
 
+**Stack:**
+
+Since this project is part of a Python course, everything will be made using Python.
+
+Kivy => Mobile App
+
+SQLite => Data Storage
+
 **Development Status:**
 
 This project is currently under development!
