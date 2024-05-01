@@ -22,9 +22,9 @@
 
 Since this project is part of a Python course, everything will be made using Python.
 
-Kivy => Mobile App
+* **Kivy:** Mobile App
 
-SQLite => Data Storage
+* **SQLite:** Data Storage
 
 **Development Status:**
 
