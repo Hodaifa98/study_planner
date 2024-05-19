@@ -28,10 +28,10 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  /*void _incrementCounter() {
-	// Update app state.
-	setState(() {});
-  }*/
+	/*void _incrementCounter() {
+		// Update app state.
+		setState(() {});
+	}*/
 
 	// Rebuild app.
   	@override
@@ -39,24 +39,6 @@ class _HomePageState extends State<HomePage> {
 		double screenWidth = MediaQuery.of(context).size.width;
 		return Scaffold(
 			appBar: null,
-			/*body: Center(
-		  		child: Column(
-					mainAxisAlignment: MainAxisAlignment.center,
-					children: <Widget>[
-						Text(
-							'Welcome',
-							style: Theme.of(context).textTheme.headlineMedium,
-						),
-						const Text(
-							'to',
-						),
-						Text(
-							'StudyPlanner',
-							style: Theme.of(context).textTheme.bodyLarge,
-						),
-					],
-		  		),
-			)*/
 			body: DecoratedBox(
 				decoration: const BoxDecoration(
 					image: DecorationImage(
