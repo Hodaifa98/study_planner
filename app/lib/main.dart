@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:study_planer/pages/User/register.dart';
 
 void main() {
 	runApp(const Home());
@@ -45,26 +46,34 @@ class _HomePageState extends State<HomePage> {
 						fit: BoxFit.cover
 					)
 				),
-				child: Center(
-					child: Column(
-						mainAxisAlignment: MainAxisAlignment.center,
-						children: <Widget>[
-							Image(
-								image: const AssetImage('assets/images/logo.png'),
-								width: screenWidth * 0.18
-							),
-							const SizedBox(height: 10.0),
-							const Text(
-								'StudyPlanner',
-								style: TextStyle (
-									fontFamily: 'Roboto',
-									fontWeight: FontWeight.bold,
-									fontSize: 35.0
-								)
-							),
-						],
-		  			),
-				),
+				child: GestureDetector(
+					onTap: () => {
+						Navigator.push(
+							context,
+							MaterialPageRoute(builder: (context) => const Register()),
+						)
+					},
+					child: Center(
+						child: Column(
+							mainAxisAlignment: MainAxisAlignment.center,
+							children: <Widget>[
+								Image(
+									image: const AssetImage('assets/images/logo.png'),
+									width: screenWidth * 0.18
+								),
+								const SizedBox(height: 10.0),
+								const Text(
+									'StudyPlanner',
+									style: TextStyle (
+										fontFamily: 'Roboto',
+										fontWeight: FontWeight.bold,
+										fontSize: 35.0
+									)
+								),
+							],
+						),
+					)
+				)
 			)
 		);
   	}
