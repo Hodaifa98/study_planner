@@ -2,29 +2,27 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 void main() {
-  runApp(const Home());
+	runApp(const Home());
 }
 
 class Home extends StatelessWidget {
-  const Home({super.key});
+	const Home({super.key});
 
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-	return MaterialApp(
-	  title: 'Home',
-	  theme: ThemeData(
-		colorScheme: ColorScheme.fromSeed(seedColor: Colors.black),
-		useMaterial3: true,
-	  ),
-	  home: const HomePage(title: 'Home'),
-	);
-  }
+	// This widget is the root of your application.
+	@override
+	Widget build(BuildContext context) {
+		return MaterialApp(
+			theme: ThemeData(
+				colorScheme: ColorScheme.fromSeed(seedColor: Colors.black),
+				useMaterial3: true,
+			),
+			home: const HomePage(),
+		);
+	}
 }
 
 class HomePage extends StatefulWidget {
-	const HomePage({super.key, required this.title});
-	final String title;
+	const HomePage({super.key,});
 	@override
 	State<HomePage> createState() => _HomePageState();
 }
