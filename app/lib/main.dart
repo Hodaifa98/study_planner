@@ -74,6 +74,7 @@ class _HomePageState extends State<HomePage> {
 								image: const AssetImage('assets/images/logo.png'),
 								width: screenWidth * 0.18
 							),
+							const SizedBox(height: 10.0),
 							const Text(
 								'StudyPlanner',
 								style: TextStyle (
