@@ -111,7 +111,8 @@ class RegisterPageState extends State<RegisterPage> {
 								style: ButtonStyle(
 									backgroundColor: MaterialStateProperty.resolveWith((states) => darkColor),
 									padding: MaterialStateProperty.resolveWith((states) => 
-										const EdgeInsets.symmetric(vertical: 10.0, horizontal: 35.0)),
+										const EdgeInsets.symmetric(vertical: 10.0, horizontal: 35.0)
+									),
 								),
 								child: const Text(
 									'Next',
